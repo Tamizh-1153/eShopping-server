@@ -17,9 +17,9 @@ app.use(express.json())
 app.use(cors())
 app.use("/api/v1", userRouter)
 app.use("/api/v1/products", productsRouter)
-// app.get("/", (req, res) => {
-//   res.send("Gmail clone Backend")
-// })
+app.get("/", (req, res) => {
+  res.send("Online shopping backened")
+})
 
 const start = async () => {
   try {
